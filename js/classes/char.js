@@ -37,6 +37,13 @@ class Character {
 
         this.loadRace();
 
+        this.attributes.eff_agi =  Math.floor(this.attributes.agi * this.attributes.mult_agi);
+        this.attributes.eff_str =  Math.floor(this.attributes.str * this.attributes.mult_str);
+        this.attributes.eff_sta =  Math.floor(this.attributes.sta * this.attributes.mult_sta);
+        this.attributes.eff_spi =  Math.floor(this.attributes.spi * this.attributes.mult_spi);
+        this.attributes.eff_int =  Math.floor(this.attributes.int * this.attributes.mult_int);
+        this.attributes.eff_armor = Math.floor(this.attributes.armor * this.attributes.mult_armor);
+
     };
 
     loadRace() {
