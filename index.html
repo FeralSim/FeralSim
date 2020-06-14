@@ -1,7 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width" charset="utf-8">
         <title>TBC Feral Tanking Gear Simulator</title>
+        <link rel="stylesheet" href="view/main.css">
     </head>
+
+    <body>
+        <h1>TBC Feral Tanking Gear Simulator</h1>
+        <p>
+            <label>Race: </label>
+            <select dir="ltr" name="char_race" onchange="loadCharacter(this)">
+                <option value="0">Select Race</option>
+                <option value="Night Elf">Night Elf</option>
+                <option value="Tauren">Tauren</option>
+            </select>
+            </p>
+        <ul>
+            <li>
+                <label>Stamina</label>
+                <span id="stat_sta"></span>
+            </li>
+            <li>
+                <label>Strength</label>
+                <span id="stat_str"></span>
+            </li>
+            <li>
+                <label>Agility</label>
+                <span id="stat_agi"></span>
+            </li>
+            <li>
+                <label>Spirit</label>
+                <span id="stat_spi"></span>
+            </li>
+            <li>
+                <label>Intellect</label>
+                <span id="stat_int"></span>
+            </li>
+        </ul>
+        <script type="text/javascript" src="js/classes/test.js"></script>
+        <script type="text/javascript" src="js/classes/char.js"></script>
+        <script type="text/javascript" src="js/player.js"></script>
+        <script type="text/javascript" src="js/data/races.js"></script>
+        <noscript>Javascript must be enabled</noscript>
+    </body>
 </html>
