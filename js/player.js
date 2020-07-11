@@ -23,12 +23,11 @@
 // }
 
 function loadCharacter(species) {
-    console.log(species.value)
     let player = new Character(species.value);
 
-    stat_str.innerHTML = player.attributes.str;
-    stat_sta.innerHTML = player.attributes.sta;
-    stat_agi.innerHTML = player.attributes.agi;
-    stat_int.innerHTML = player.attributes.int;
-    stat_spi.innerHTML = player.attributes.spi;
+    stat_str.innerHTML = player.attributes.eff_str;
+    stat_sta.innerHTML = player.attributes.eff_sta;
+    stat_agi.innerHTML = player.attributes.eff_agi;
+    stat_int.innerHTML = player.attributes.eff_int;
+    stat_spi.innerHTML = player.attributes.eff_spi;
 };
