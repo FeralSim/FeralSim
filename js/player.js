@@ -23,7 +23,6 @@
 // }
 
 function loadCharacter(species) {
-    console.log(species.value)
     let player = new Character(species.value);
 
     stat_str.innerHTML = player.attributes.eff_str;

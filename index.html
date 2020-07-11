@@ -10,10 +10,8 @@
         <h1>TBC Feral Tanking Gear Simulator</h1>
         <p>
             <label>Race: </label>
-            <select dir="ltr" name="char_race" onchange="loadCharacter(this)">
-                <option value="0">Select Race</option>
-                <option value="Night Elf">Night Elf</option>
-                <option value="Tauren">Tauren</option>
+            <select dir="ltr" id="char_race" onchange="loadCharacter(this)">
+                <option selected disabled hidden>Select Race</option>
             </select>
             </p>
         <ul>
@@ -38,10 +36,12 @@
                 <span id="stat_int"></span>
             </li>
         </ul>
-        <script type="text/javascript" src="js/classes/test.js"></script>
+        <script type="text/javascript" src="js/data/races.js"></script>
+        <script type="text/javascript" src="js/data/classes.js"></script>
         <script type="text/javascript" src="js/classes/char.js"></script>
         <script type="text/javascript" src="js/player.js"></script>
-        <script type="text/javascript" src="js/data/races.js"></script>
+        <script type="text/javascript" src="js/src/select_races.js"></script>
+        <script type="text/javascript" src="js/classes/test.js"></script>
         <noscript>Javascript must be enabled</noscript>
     </body>
 </html>
